@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 
 //routes
 app.use((req,res)=>{
-    //res.render('home.ejs');
+    res.render('home.ejs');
     res.json({msg:"hosting successfull"})
 })
 
