@@ -6,8 +6,7 @@ app.set('view engine', 'ejs');
 
 //routes 
 app.use((req,res)=>{
-    res.render('home.ejs');
-    res.json({msg:"hosting successfull"})
+    return res.render('home.ejs');
 })
 
 let port = 3000 || process.env.PORT;
